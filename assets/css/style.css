@@ -1,0 +1,181 @@
+#topImage{
+    height:400px;
+    width:100%;
+    padding:0;
+}
+#navBar{
+    height:50px;
+    box-shadow:2px 2px 2px 2px grey;
+    position:fixed;
+    width:100%;
+    z-index:3;
+    
+}
+.menu{
+    display:inline-block;
+    text-align:right;
+    text-decoration:grey;
+    font-size:23px;
+    color:grey;
+    padding:10px;
+    line-height:1;
+    float:right;
+}
+#name{
+    opacity:0.5;
+    font-size:36px;
+    margin-top:3px;
+    font-variant:small-caps;
+    
+}
+
+body{
+    background:#ECEDF1;
+}
+
+.divider{
+    margin-top:3vw;
+    height:2px;
+    background:grey;
+    width:100%;
+    opacity:0.15;
+}
+
+.place{
+    height:50px;
+    width:100%;
+    background:#ECEDF1;
+}
+
+#introMessage{
+    width:50%;
+    position:absolute;
+    margin-top:200px;
+    padding:5vw;
+}
+
+#portfolioImage{
+    height:40vw;
+    width:100%;
+    
+}
+
+#profilePic{
+    padding:10px;
+}
+
+.subTitle{
+    margin-top:3vw;
+    text-align:center;
+    color:grey;
+}
+
+#learningList{
+    height:10vw;
+    overflow-y:auto;
+    animation: scroll 5s infinite;
+}
+
+#learningList::-webkit-scrollbar{
+    display:none;
+}
+
+.icon{
+    height:2vw;
+    width:2vw;
+    margin-top:2vw;
+}
+.minimize{
+    margin-top:1.5vw;
+   opacity:0.5;
+}
+
+footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+}
+
+#introText{
+    background:white;
+    height:800px;
+    width:100%;
+    text-align:center;
+    line-height:50vw;
+    animation:blink 2s infinite alternate;
+    z-index:10;
+    
+}
+
+footer{
+    border-top:0.1vw solid;
+    border-top-color:rgb(128,128,128,0.2);
+    
+}
+
+#copyright{
+    opacity:0.3;
+    line-height:5vw;
+}
+/* Cube --------------------------------------------------------*/
+.cubeWrap{
+    perspective: 700vw;;
+    margin-left:10vw;
+    margin-top:5vw;
+  }
+  
+  .cube{
+    transform-style: preserve-3d;
+     animation:rot 10s infinite;
+   width:75px;
+    position: relative;
+  }
+  
+  .cube div{
+    height: 30vw;
+    width: 30vw;
+    opacity: 0.9;
+    position: absolute;
+  }
+  
+  .front{
+    background:blue;
+    transform:translateZ(30vw);
+  }
+  
+  .back{
+    background:grey;
+    transform: rotateY(180deg) translateZ(30vw);
+  }
+
+  .left{
+    background: yellow;
+    transform: rotateY(90deg) translateZ(30vw);
+  }
+  
+  .right{
+    background: orange;
+    transform: rotateY(-90deg) translateZ(30vw);
+  }
+
+  #hoverText{
+      color:grey;
+      text-align:center;
+      margin-top:3vw;
+  }
+  
+  
+  
+  @keyframes rot{
+    To{transform:rotateY(360deg)};
+  }
+/*---------------------------------------------------------------*/
+@keyframes blink{
+    To{opacity:0.2; letter-spacing:1vw;}
+}
+
+
+@keyframes scroll{
+    To{transform:translateY(360px);}
+}
+
